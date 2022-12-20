@@ -1,0 +1,98 @@
+@font-face {
+	font-family: 'Conv_Gidole-Regular';
+	src: url('../fonts/Gidole-Regular.eot');
+	src: local('☺'), url('../fonts/Gidole-Regular.woff') format('woff'), url('../fonts/Gidole-Regular.ttf') format('truetype'), url('../fonts/Gidole-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Kollektif';
+	src: url('../fonts/Kollektif.eot');
+	src: local('☺'), url('../fonts/Kollektif.woff') format('woff'), url('../fonts/Kollektif.ttf') format('truetype'), url('../fonts/Kollektif.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.container {
+    background-color: #2A2F3D;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "A B B B C C C ."
+    "A B B B C C C ."
+    "A . D D D D . .";
+    justify-items: stretch;   
+}
+
+.containerClose {
+    display: flex;
+    grid-area: A;
+    background-color: #2A2F3D;
+    border: none;
+    font-family: 'Conv_Kollektif';
+    font-weight: normal;
+    font-style: normal;
+    color: #FF6732;
+    
+}
+
+.Close {
+    transform: rotate(-90deg);
+    margin-right: -15px;
+    align-self: center;
+    font-size: 33px;
+}
+
+.containerPhoto {
+    position: relative;
+    grid-area: B;
+    align-self: end;
+    justify-content: flex-end;
+}
+
+.images {
+    
+    width: 560px; 
+    height: 360px;
+    margin-left: 80px;
+}
+.containerText {
+    position: relative;
+    grid-area: C;
+    color: #FFFFFF;
+    font-size: 31px;
+    font-family: 'Conv_Gidole-Regular';
+    margin-top: 102px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.containerIcon {
+    justify-content: center;
+    grid-area: D;
+    color: white;
+    position: sticky ;
+}
+
+.socialMedia {
+    
+    margin: 90px 40px 0px 45px;
+    width: 65px; 
+    height: 65px;
+       
+}
+
+.flash {  
+    margin: 0 10% ;
+    width: 90%; 
+    left: -10%;
+    position: fixed;             
+    top: 40%;                         
+    transform: translate(0, -50%)   
+}
+
+.imgFlash {
+    background: fixed;
+    position: absolute; 
+}
